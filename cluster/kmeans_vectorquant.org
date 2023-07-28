@@ -35,3 +35,30 @@ features = np.array([[1.9, 2.3, 1.7],
 
 whiten(features)
 #+end_src
+
+#+RESULTS:
+: array([[4.17944278, 2.69811351, 7.21248917],
+:        [3.29956009, 2.93273208, 9.33380951],
+:        [1.75976538, 0.7038557 , 7.21248917]])
+
+
+** scipy.cluster.vq.vq
+
+Assign codes from a code book to observations.
+
+#+begin_src jupyter-python
+import numpy as np
+from scipy.cluster.vq import vq
+
+code_book = np.array([[1., 1., 1.],
+                      [2., 2., 2.]])
+
+features = np.array([[1.9,2.3,1.7],
+                     [1.5,2.5,2.2],
+                     [0.8,0.6,1.7]])
+
+vq(features, code_book)
+#+end_src
+
+#+RESULTS:
+| array | ((1 1 0) dtype=int32) | array | ((0.43588989 0.73484692 0.83066239)) |
