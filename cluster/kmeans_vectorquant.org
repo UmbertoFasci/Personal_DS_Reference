@@ -62,3 +62,6 @@ vq(features, code_book)
 
 #+RESULTS:
 | array | ((1 1 0) dtype=int32) | array | ((0.43588989 0.73484692 0.83066239)) |
+
+
+to continue...
